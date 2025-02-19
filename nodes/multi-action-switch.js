@@ -59,7 +59,7 @@ module.exports = function(RED) {
         };
 
         // Handle incoming messages
-        node.on('input', function(msg) {
+        node.on("input", function(msg) {
             const now = Date.now();
             let topic = OUTPUT_TOPIC && OUTPUT_TOPIC.trim() !== "" ? OUTPUT_TOPIC : msg.topic;
             if (msg.payload === TRIGGER_VALUE) {
@@ -121,7 +121,7 @@ module.exports = function(RED) {
             }
         });
 
-        node.on('close', function() {
+        node.on("close", function() {
             if (node.switchState.longPressTimer) {
                 clearTimeout(node.switchState.longPressTimer);
             }

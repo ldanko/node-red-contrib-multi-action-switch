@@ -18,9 +18,11 @@
     }
   },
   "scripts": {
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "lint": "eslint nodes/"
   },
   "devDependencies": {
+    "eslint": "^9.20.1",
     "mocha": "^11.1.0",
     "node-red": "^4.0.9",
     "node-red-node-test-helper": "^0.3.4",
@@ -28,9 +30,16 @@
     "should": "^13.2.3"
   },
   "nyc": {
-    "reporter": ["text", "html"],
+    "reporter": [
+      "text",
+      "html"
+    ],
     "all": true,
-    "include": ["nodes/**/*.js"],
-    "exclude": ["test/**/*.js"]
+    "include": [
+      "nodes/**/*.js"
+    ],
+    "exclude": [
+      "test/**/*.js"
+    ]
   }
 }
