@@ -1,0 +1,50 @@
+<script type="text/javascript">
+    RED.nodes.registerType('multi-action-switch', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: { value: "" },
+            triggerValue: { value: "true", required: true },
+            doubleClickTime: { value: "400", required: true },
+            longPressTime: { value: "700", required: true },
+            toggleState: { value: false },
+            includeTimestamp: { value: false },
+            // Optional: if empty, input msg.topic is passed through.
+            outputTopic: { value: "", required: false }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "font-awesome/fa-lightbulb-o",
+        label: function() {
+            return this.name || "multi-action-switch";
+        }
+    });
+</script>
+<div class="form-row">
+    <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-input-name" placeholder="Name">
+</div>
+<div class="form-row">
+    <label for="node-input-triggerValue"><i class="fa fa-tag"></i> Trigger Value</label>
+    <input type="text" id="node-input-triggerValue" placeholder="e.g. true">
+</div>
+<div class="form-row">
+    <label for="node-input-doubleClickTime"><i class="fa fa-tag"></i> DoubleClick Time (ms)</label>
+    <input type="number" id="node-input-doubleClickTime" placeholder="e.g. 400">
+</div>
+<div class="form-row">
+    <label for="node-input-longPressTime"><i class="fa fa-tag"></i> LongPress Time (ms)</label>
+    <input type="number" id="node-input-longPressTime" placeholder="e.g. 700">
+</div>
+<div class="form-row">
+    <label for="node-input-toggleState"><i class="fa fa-tag"></i> Toggle State</label>
+    <input type="checkbox" id="node-input-toggleState">
+</div>
+<div class="form-row">
+    <label for="node-input-includeTimestamp"><i class="fa fa-tag"></i> Include Timestamp</label>
+    <input type="checkbox" id="node-input-includeTimestamp">
+</div>
+<div class="form-row">
+    <label for="node-input-outputTopic"><i class="fa fa-tag"></i> Output Topic</label>
+    <input type="text" id="node-input-outputTopic" placeholder="e.g. home/kitchen/switch/button1 (optional)">
+</div>
