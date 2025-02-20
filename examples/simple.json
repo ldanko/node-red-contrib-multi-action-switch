@@ -1,0 +1,92 @@
+[
+    {
+        "id": "78ed3e3b5ddb8fd5",
+        "type": "multi-action-switch",
+        "z": "1b9539d6b5677f6f",
+        "name": "",
+        "triggerValue": "true",
+        "doubleClickTime": "400",
+        "longPressTime": "700",
+        "toggleState": false,
+        "includeTimestamp": false,
+        "outputTopic": "",
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [
+                "f18825ce36116c26"
+            ]
+        ]
+    },
+    {
+        "id": "0bcf6cc7c0506a0a",
+        "type": "inject",
+        "z": "1b9539d6b5677f6f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "str",
+        "x": 170,
+        "y": 380,
+        "wires": [
+            [
+                "f2fa15a6c0bb7506"
+            ]
+        ]
+    },
+    {
+        "id": "f18825ce36116c26",
+        "type": "debug",
+        "z": "1b9539d6b5677f6f",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 730,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "f2fa15a6c0bb7506",
+        "type": "trigger",
+        "z": "1b9539d6b5677f6f",
+        "name": "",
+        "op1": "true",
+        "op2": "false",
+        "op1type": "str",
+        "op2type": "str",
+        "duration": "100",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "ms",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 340,
+        "y": 380,
+        "wires": [
+            [
+                "78ed3e3b5ddb8fd5"
+            ]
+        ]
+    }
+]
