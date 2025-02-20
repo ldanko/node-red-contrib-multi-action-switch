@@ -139,8 +139,8 @@ This project is licensed under the **MIT License**.
 ---
 
 ## 🔗 **Links**
-- [Node-RED Flows Library](https://flows.nodered.org/)
-- [GitHub Repository](https://github.com/yourusername/node-red-contrib-multi-action-switch)
+- [Node-RED Flows Library](https://flows.nodered.org/node/node-red-contrib-multi-action-switch)
+- [GitHub Repository](https://github.com/ldanko/node-red-contrib-multi-action-switch/tree/master)
 - [npm Package](https://www.npmjs.com/package/node-red-contrib-multi-action-switch)
 
 ---
