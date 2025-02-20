@@ -2,6 +2,20 @@
   "name": "node-red-contrib-multi-action-switch",
   "version": "0.0.4",
   "description": "A custom Node-RED node for handling multi-click, longpress, press and release events for SmartHome systems.",
+  "author": "Łukasz Dańko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ldanko/node-red-contrib-multi-action-switch/issues"
+  },
+  "engines": {
+    "node": ">=18.5"
+  },
+  "node-red": {
+    "version": ">=4.0.0",
+    "nodes": {
+      "multi-action-switch": "nodes/multi-action-switch.js"
+    }
+  },
   "keywords": [
     "node-red",
     "smarthome",
@@ -10,18 +24,6 @@
     "longpress",
     "multi-action"
   ],
-  "bugs": "https://github.com/ldanko/node-red-contrib-multi-action-switch/issues",
-  "author": "Łukasz Dańko",
-  "license": "MIT",
-  "engines": {
-  "  node": ">=18.5"
-  },
-  "node-red": {
-    "version": ">=4.0.0",
-    "nodes": {
-      "multi-action-switch": "nodes/multi-action-switch.js"
-    }
-  },
   "scripts": {
     "test": "nyc mocha",
     "lint": "eslint nodes/"
