@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-multi-action-switch",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A custom Node-RED node for handling multi-click, longpress, press and release events for SmartHome systems.",
   "author": "Łukasz Dańko",
   "license": "MIT",
