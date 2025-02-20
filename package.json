@@ -10,11 +10,11 @@
     "longpress",
     "multi-action"
   ],
-  "url": "https://github.com/ldanko/node-red-contrib-multi-action-switch/issues",
+  "bugs": "https://github.com/ldanko/node-red-contrib-multi-action-switch/issues",
   "author": "Łukasz Dańko",
   "license": "MIT",
   "engines": {
-  "  node": ">=18.0.0"
+  "  node": ">=18.5"
   },
   "node-red": {
     "version": ">=4.0.0",
